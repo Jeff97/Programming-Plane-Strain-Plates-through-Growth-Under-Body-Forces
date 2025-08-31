@@ -1,0 +1,63 @@
+T:
+
+cd T:\Abaqus-Temp\20250625GrowthUnderGravity\Lambda1Z1Epsilon1\ParabolicDown\Th01
+
+---------------------------------------------------------------------
+abaqus job=Beam-Gravity-Growth-C0-1MPa cpus=12  user=BodyForce-Growth-2Stages.for
+y
+abaqus job=Beam-Gravity-Growth-C0-5MPa cpus=12  user=BodyForce-Growth-2Stages.for
+y
+abaqus job=Beam-Gravity-Growth-C0-10MPa cpus=8  user=BodyForce-Growth-2Stages.for
+y
+abaqus job=Beam-Gravity-Growth-C0-25MPa cpus=8  user=BodyForce-Growth-2Stages.for
+y
+abaqus job=Beam-Gravity-Growth-C0-50MPa cpus=8  user=BodyForce-Growth-2Stages.for
+y
+abaqus job=Beam-Gravity-Growth-C0-100MPa cpus=8  user=BodyForce-Growth-2Stages.for
+y
+
+---------------------------------------------------------------------
+
+T:
+
+cd T:\Abaqus-Temp\20250625GrowthUnderGravity\Lambda1Z1Epsilon1\ParabolicDown\Th001
+abaqus job=Beam-PureGrowth cpus=8  user=PureGrowth.for
+y
+
+T:
+
+cd T:\Abaqus-Temp\20250625GrowthUnderGravity\Lambda1Z1Epsilon1\ParabolicDown\Th002
+abaqus job=Beam-PureGrowth cpus=8  user=PureGrowth.for
+y
+
+T:
+
+cd T:\Abaqus-Temp\20250625GrowthUnderGravity\Lambda1Z1Epsilon1\ParabolicDown\Th005
+abaqus job=Beam-PureGrowth cpus=8  user=PureGrowth.for
+y
+
+T:
+
+cd T:\Abaqus-Temp\20250625GrowthUnderGravity\Lambda1Z1Epsilon1\ParabolicDown\Th01
+abaqus job=Beam-PureGrowth cpus=8  user=PureGrowth.for
+y
+
+
+---------------------------------------------------------------------
+abaqus job=Beam-Gravity-C0-1MPa cpus=12  user=PureGravity.for
+y
+abaqus job=Beam-Gravity-C0-5MPa cpus=12  user=PureGravity.for
+y
+abaqus job=Beam-Gravity-C0-10MPa cpus=8  user=PureGravity.for
+y
+abaqus job=Beam-Gravity-C0-25MPa cpus=8  user=PureGravity.for
+y
+abaqus job=Beam-Gravity-C0-50MPa cpus=8  user=PureGravity.for
+y
+abaqus job=Beam-Gravity-C0-100MPa cpus=8  user=PureGravity.for
+y
+------------------------------------------
+TODO:
+abaqus terminate job=Cylinder-g08-Gm120
+
+timeout /t 180 /nobreak

@@ -1,0 +1,19 @@
+T:
+
+cd T:\Abaqus-Temp\20250625GrowthUnderGravity\Experiment-ECOFLEX0030-Flat\Th005
+
+---------------------------------------------------------------------
+abaqus job=Beam-Gravity-Growth cpus=12  user=BodyForce-Growth-2Stages.for
+y
+
+abaqus job=Beam-Gravity cpus=8  user=PureGravity.for
+y
+
+abaqus job=Beam-PureGrowth cpus=8  user=PureGrowth.for
+y
+
+------------------------------------------
+TODO:
+abaqus terminate job=Cylinder-g08-Gm120
+
+timeout /t 180 /nobreak
