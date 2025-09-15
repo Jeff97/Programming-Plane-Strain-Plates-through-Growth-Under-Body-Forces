@@ -4,7 +4,7 @@ Here, we provide some supplementary files for the manuscript[1].
 
 - Each folder contains the ABAQUS input files and the corresponding UMAT subroutines
 
-[1] **Shape-Programming Framework for Hyperelastic Plane-Strain Plates through Differential Growth in the Presence of Body Forces**, Zhanfeng Li, Xiaohu Yao, Mokarram Hossain, Jiong Wang*
+[1] **Shape-control Framework for Hyperelastic Plane-Strain Plates through Differential Growth in the Presence of Body Forces**, Zhanfeng Li, Xiaohu Yao, Mokarram Hossain, Jiong Wang*
 
 
 
